@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+header {
+  background: #0077cc;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+}
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  loading: lazy;
+}
+
+.cart {
+  padding: 80px 40px;
+  background-color: #f0f8ff;
+}
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+#cart-items li {
+  padding: 30px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+#cart-total {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.contact {
+  padding: 40px 20px;
+  background: #fff;
+}
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.contact button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  header, .hero, .contact {
+    text-align: center;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
